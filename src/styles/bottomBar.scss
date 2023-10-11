@@ -1,22 +1,37 @@
-$text1: #404040;
-$text2: #9F9F9F;
-$text3: #B8B8B8;
+@import './params.scss';
 
-$c-primary1: #42602E;
-$c-primary2: #C1DFC4;
-$c-primary3: #DEECDD;
-$c-secondary1: #FFDA0B;
-$c-secondary2: #FFF3AD;
-$c-success: #0A8808;
-$c-error: #BF0B0B;
+.bottomBar{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 2px solid rgba($text2, 0.5);
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    li{
+        &.focus{
+            a{
+                color: $c-primary1;
+                font-weight: 500;
+            }
+        }
 
-body{
-    color: #000;
-    letter-spacing: 8%;
+        a{
+            color: $text3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.75rem;
+            
+            img{
+                width: 36px;
+                height: 36px;
+                margin: 0 0 8px;
+            }
+        }
+    }
 }

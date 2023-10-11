@@ -1,9 +1,9 @@
-function Member() {
+function Shop() {
   return (
     <div className="contentBox">
-        123
+        shop
     </div>
   );
 }
 
-export default Member;
+export default Shop;
