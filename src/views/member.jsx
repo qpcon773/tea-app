@@ -69,7 +69,7 @@ function Member() {
     {
       url: require("imgs/icon/conical-flask.svg").default,
       name: "關於我們",
-      showSocialBtn: false,
+      showSocialBtn: true,
       id: 6,
     },
   ]
@@ -106,6 +106,14 @@ function Member() {
                   <img src={item.url} alt="" />
                   {item.name}
                 </a>
+                <div className={`socialBox${item.showSocialBtn? '':' dNone'}`}>
+                  <a href="#" onClick={(e) => { e.preventDefault() }}>
+                  <img src={require("imgs/icon/facebook.svg").default} alt="" />
+                  </a>
+                  <a href="#" onClick={(e) => { e.preventDefault() }}>
+                  <img src={require("imgs/icon/instagram.svg").default} alt="" />
+                  </a>
+                </div>
               </li>
             )
           })
