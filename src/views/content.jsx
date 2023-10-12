@@ -7,7 +7,7 @@ const Content = () => {
       <>
         <Routes>
           <Route index element={<Member />} />
-          <Route path='3257' element={<Shop />} />
+          <Route path='shop' element={<Shop />} />
         </Routes>
       </>
     );

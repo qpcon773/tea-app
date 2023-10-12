@@ -1,4 +1,4 @@
-import "../styles/topBar.scss";
+import "styles/topBar.scss";
 
 const TopBar = () => {
     return (

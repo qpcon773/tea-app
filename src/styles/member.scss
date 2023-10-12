@@ -1,1 +1,27 @@
 @import './params.scss';
+
+.pieBox{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 24px 0 0;
+
+    canvas{
+        max-width: 300px;
+        max-height: 300px;
+        pointer-events: none;
+    }
+
+    .pieInfo{
+        width: 260px;
+        height: 260px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 44px;
+    }
+}

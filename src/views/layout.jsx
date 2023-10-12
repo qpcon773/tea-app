@@ -1,4 +1,4 @@
-import "../styles/all.scss"
+import "styles/all.scss"
 import Content from "./content";
 import TopBar from "./topBar"
 import BottomBar from "./bottomBar"
