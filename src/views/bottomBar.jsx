@@ -43,7 +43,7 @@ const BottomBar = () => {
   const navigate = useNavigate()
 
   const clickEvent = (id)=>{
-
+    
     navigate('/3257')
 
     const res = barData.map((item)=>{
@@ -58,7 +58,8 @@ const BottomBar = () => {
       {barData.map((item) => {
         return (
           <li className={item.isFocus ? "focus" : null} key={item.id}>
-            <a href="#" onClick={()=>{
+            <a href="#" onClick={(e)=>{
+                e.preventDefault()
                 clickEvent(item.id)
             }}>
               <img
