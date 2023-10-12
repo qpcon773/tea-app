@@ -1,27 +1,130 @@
-@import './params.scss';
+@import "./params.scss";
 
-.pieBox{
+.contentBox {
+  .pieBox {
     display: flex;
     justify-content: center;
     position: relative;
     padding: 24px 0 0;
 
-    canvas{
-        max-width: 300px;
-        max-height: 300px;
-        pointer-events: none;
+    canvas {
+      max-width: 240px;
+      max-height: 240px;
+      pointer-events: none;
     }
 
-    .pieInfo{
-        width: 260px;
-        height: 260px;
-        background: #fff;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 44px;
+    .pieInfo {
+      width: 200px;
+      height: 200px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 44px;
+
+      p {
+        font-weight: 700;
+        font-size: 1rem;
+
+        &:not(:first-child) {
+          margin: 8px 0 0;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 0 4px 0 0;
+        }
+
+        span {
+          font-size: 1.75rem;
+          font-weight: 900;
+          margin: 0 0 0 8px;
+        }
+
+        b {
+          font-size: 1.25rem;
+        }
+      }
     }
+  }
+
+  .functionList {
+    margin: 24px 0 0;
+
+    > :not(.user) {
+      padding: 10px 20px;
+      border-top: 1px solid rgba($text2, 0.5);
+
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        img {
+          width: 24px;
+          height: 24px;
+          margin: 0 12px 0 0;
+        }
+      }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 0 20px 10px;
+
+        .info{
+            display: flex;
+            align-items: center;
+
+            .userImg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                height: 40px;
+                aspect-ratio: 1 / 1;
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            p{
+                padding: 0 12px;
+                font-weight: 700;
+                font-size: 1.125rem;
+
+                span{
+                    display: block;
+                    font-size: 0.875rem;
+                    margin: 4px 0 0;
+                }
+            }
+        }
+
+        a{
+            margin: 0 0 0 auto;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            border: 2px solid $c-primary1;
+            border-radius: 50%;
+
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+  }
 }
