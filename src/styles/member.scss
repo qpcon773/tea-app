@@ -1,6 +1,8 @@
 @import "./params.scss";
 
 .contentBox {
+  &.member {
+  }
   .pieBox {
     display: flex;
     justify-content: center;
@@ -61,7 +63,7 @@
       align-items: center;
       justify-content: space-between;
 
-      >a {
+      > a {
         display: flex;
         align-items: center;
         font-size: 1.125rem;
@@ -74,73 +76,73 @@
         }
       }
 
-      .socialBox{
+      .socialBox {
         display: flex;
         align-items: center;
         gap: 0 8px;
 
-        a{
-            display: inline-flex;
+        a {
+          display: inline-flex;
 
-            img{
-                width: 24px;
-            }
+          img {
+            width: 24px;
+          }
         }
       }
     }
 
     .user {
+      display: flex;
+      align-items: center;
+      padding: 0 20px 10px;
+
+      .info {
         display: flex;
         align-items: center;
-        padding: 0 20px 10px;
 
-        .info{
-            display: flex;
-            align-items: center;
+        .userImg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+          height: 40px;
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
 
-            .userImg{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 12px;
-                height: 40px;
-                aspect-ratio: 1 / 1;
-                overflow: hidden;
-
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            p{
-                padding: 0 12px;
-                font-weight: 700;
-                font-size: 1.125rem;
-
-                span{
-                    display: block;
-                    font-size: 0.875rem;
-                    margin: 4px 0 0;
-                }
-            }
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
         }
 
-        a{
-            margin: 0 0 0 auto;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 32px;
-            width: 32px;
-            height: 32px;
-            border: 2px solid $c-primary1;
-            border-radius: 50%;
+        p {
+          padding: 0 12px;
+          font-weight: 700;
+          font-size: 1.125rem;
 
-            img{
-                height: 16px;
-            }
+          span {
+            display: block;
+            font-size: 0.875rem;
+            margin: 4px 0 0;
+          }
         }
+      }
+
+      a {
+        margin: 0 0 0 auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+        border: 2px solid $c-primary1;
+        border-radius: 50%;
+
+        img {
+          height: 16px;
+        }
+      }
     }
   }
 }

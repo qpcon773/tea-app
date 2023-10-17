@@ -1,0 +1,31 @@
+@import "./params.scss";
+
+.event {
+  &.event {
+    padding: 82px 16px 124px;
+
+    .eventCardList{
+      display: flex;
+      flex-direction: column;
+      gap: 16px 0;
+
+      li{
+        background: $c-primary1;
+
+        &.funCard{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 40px;
+          border-radius: 16px;
+          color: #fff;
+
+          img{
+            width: 32px;
+            margin: 0 0 0 24px;
+          }
+        }
+      }
+    }
+  }
+}

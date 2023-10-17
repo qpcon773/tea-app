@@ -1,6 +1,7 @@
+import "styles/member.scss"
+
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import "styles/member.scss"
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -26,8 +27,6 @@ function Member() {
       },
     },
   };
-
-  console.log(require("imgs/all/gl626937.jpg"))
 
   const listData = [
     {
@@ -74,7 +73,7 @@ function Member() {
     },
   ]
   return (
-    <div className="contentBox">
+    <div className="contentBox member">
       <div className="pieBox">
         <Pie data={data} options={options} />
         <div className="pieInfo">

@@ -10,7 +10,7 @@ const BottomBar = () => {
       focusUrl: require("imgs/icon/discount-voucher_g.svg"),
       id: 0,
       isFocus: false,
-      routerPath: "/",
+      routerPath: "/event",
     },
     {
       name: "茶餘誌",
