@@ -15,6 +15,9 @@ const TopBar = () => {
     case "/shop":
       title.current = "線上購物"
       break 
+    case "/event":
+      title.current = "活動資訊"
+      break 
     default:
       break
   }

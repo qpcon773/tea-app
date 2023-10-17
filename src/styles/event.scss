@@ -4,25 +4,40 @@
   &.event {
     padding: 82px 16px 124px;
 
-    .eventCardList{
+    .eventCardList {
       display: flex;
       flex-direction: column;
       gap: 16px 0;
 
-      li{
+      li {
         background: $c-primary1;
 
-        &.funCard{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        &.funCard {
           padding: 40px;
           border-radius: 16px;
-          color: #fff;
 
-          img{
-            width: 32px;
-            margin: 0 0 0 24px;
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+
+            p {
+              font-size: 1.25rem;
+              font-weight: 700;
+
+              b {
+                display: block;
+                margin: 4px 0 0;
+                font-size: 0.875rem;
+                font-weight: 700;
+              }
+            }
+
+            img {
+              width: 32px;
+              margin: 0 0 0 24px;
+            }
           }
         }
       }
